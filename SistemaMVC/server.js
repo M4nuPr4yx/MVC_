@@ -6,6 +6,9 @@ const mysql = require('mysql2/promise')
 const pessoaRoutes = require('./src/routes/pessoasRoutes')
 const produtoRoutes = require('./src/routes/produtosRoutes')
 const chinelosRoutes = require('./src/routes/chinelosRoutes')
+const calcasRoutes = require('./src/routes/calcasRoutes')
+const blusasRoutes = require('./src/routes/blusasRoutes')
+
 
 const app = express()
 app.use(cors())
@@ -15,6 +18,8 @@ app.use(pessoaRoutes)
 app.use(produtoRoutes)
 app.use(chinelosRoutes)
 
+app.use(calcasRoutes)
+app.use(blusasRoutes)
 
 const PORT = process.env.PORT
 app.listen(PORT, ()=> console.log(`server em http://localhost:${PORT}`))
