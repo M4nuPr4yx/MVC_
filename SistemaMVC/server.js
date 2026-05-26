@@ -5,6 +5,7 @@ const cors = require('cors')
 const mysql = require('mysql2/promise')
 const pessoaRoutes = require('./src/routes/pessoasRoutes')
 const produtoRoutes = require('./src/routes/produtosRoutes')
+const calcasRoutes = require('./src/routes/calcasRoutes')
 
 const app = express()
 app.use(cors())
@@ -12,6 +13,7 @@ app.use(express.json())
 
 app.use(pessoaRoutes)
 app.use(produtoRoutes)
+app.use(calcasRoutes)
 
 
 const PORT = process.env.PORT
