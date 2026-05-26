@@ -7,7 +7,8 @@ const pessoaRoutes = require('./src/routes/pessoasRoutes')
 const produtoRoutes = require('./src/routes/produtosRoutes')
 const chinelosRoutes = require('./src/routes/chinelosRoutes')
 const acessoriosRoutes = require('./src/routes/acessoriosRoutes')
-
+const calcasRoutes = require('./src/routes/calcasRoutes')
+const blusasRoutes = require('./src/routes/blusasRoutes')
 
 const app = express()
 app.use(cors())
